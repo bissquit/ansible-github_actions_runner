@@ -72,7 +72,7 @@
       run_once: true
       become: false
       delegate_to: localhost
-      when: runner_version == "latest"
+      #when: runner_version == "latest"
 
     - name: Get systemd service facts
       ansible.builtin.service_facts:
